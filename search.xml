@@ -2538,11 +2538,15 @@ ___粗斜体文本___<span aria-hidden="true" class="line-numbers-rows"><span></
 <h3 id="这是一个三级标题"><a href="#这是一个三级标题" class="headerlink" title="这是一个三级标题"></a>这是一个三级标题</h3></blockquote>
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>使用&gt;作为引用的开始，可以引用后面的语句<br><strong>注：以空行或者标题等作为结束</strong></p>
 <pre class="line-numbers language-none"><code class="language-none">&gt;这是引用
-&gt;&gt;这是嵌套引用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+&gt;&gt;这是嵌套引用
+&gt;&gt;&gt;这是三层嵌套引用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>这是引用</p>
 <blockquote>
 <p>这是嵌套引用</p>
+<blockquote>
+<p>这是三层嵌套引用</p>
+</blockquote>
 </blockquote>
 </blockquote>
 <h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>使用三个反引号（&#96;&#96;&#96;）将代码包裹起来得到代码块</p>
@@ -2612,23 +2616,48 @@ alert(&#39;cnblogs&#39;);
 2.&lt;链接地址&gt;
 &lt;https:&#x2F;&#x2F;sun80449.github.io&#x2F;&gt;直接显示链接<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><a href="https://sun80449.github.io/">这是名字，不显示地址</a><br><a href="https://sun80449.github.io/">https://sun80449.github.io/</a></p>
-<h2 id="Bootstrap-Callout"><a href="#Bootstrap-Callout" class="headerlink" title="Bootstrap Callout"></a>Bootstrap Callout</h2><p>使用方式</p>
-<pre class="line-numbers language-none"><code class="language-none">&#123;% note class_name %&#125; 内容  &#123;% endnote %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Bootstrap-Callout（Next主题）"><a href="#Bootstrap-Callout（Next主题）" class="headerlink" title="Bootstrap Callout（Next主题）"></a>Bootstrap Callout（Next主题）</h2><p>使用方式</p>
+<pre class="line-numbers language-none"><code class="language-none">&#123;% note class_name icon %&#125; 内容  &#123;% endnote %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>其中，<code>class_name</code> 可以是以下列表中的一个值：</p>
 <ol>
-<li>default<div class="note default"><p>default  </p>
-</div></li>
-<li>primary<div class="note primary"><p>primary  </p>
-</div></li>
-<li>success<div class="note success"><p>success  </p>
-</div></li>
-<li>info<div class="note info"><p>info  </p>
-</div></li>
-<li>warning<div class="note warning"><p>warning </p>
-</div></li>
-<li>danger<div class="note danger"><p>danger  </p>
-</div></li>
+<li>default<details class="note default"><summary><p>icon</p>
+</summary>
+<p>default  </p>
+
+</details></li>
+<li>primary<details class="note primary"><summary><p>icon</p>
+</summary>
+<p>primary  </p>
+
+</details></li>
+<li>success<details class="note success"><summary><p>icon</p>
+</summary>
+<p>success  </p>
+
+</details></li>
+<li>info<details class="note info"><summary><p>icon</p>
+</summary>
+<p>info  </p>
+
+</details></li>
+<li>warning<details class="note warning"><summary><p>icon</p>
+</summary>
+<p>warning </p>
+
+</details></li>
+<li>danger<details class="note danger"><summary><p>icon</p>
+</summary>
+<p>danger  </p>
+
+</details></li>
 </ol>
+<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><h3 id="行内公式"><a href="#行内公式" class="headerlink" title="行内公式"></a>行内公式</h3><blockquote>
+<p>注：使用行内公式需要在偏好设置-MarkDown拓展语法中勾选行内公式卡</p>
+</blockquote>
+<p>行内公式用<code>$...$</code>括起公式，公式会出现在行内。</p>
+<p>$这是行内公式$</p>
+<h2 id="行间公式"><a href="#行间公式" class="headerlink" title="行间公式"></a>行间公式</h2><p>行间公式用<code>$$...$$</code>括起公式（注意 $$ 后需要换行），公式会默认显示在行中间。</p>
+<p>$$<br>这是行间公式<br>$$</p>
 ]]></content>
       <categories>
         <category>学习-软件</category>
@@ -4072,11 +4101,257 @@ alert(&#39;cnblogs&#39;);
 <p><strong>BO3 第3局</strong></p>
 <p><strong>胜者</strong>：RNG</p>
 <p><strong>BP</strong>：</p>
+<p><strong>点评</strong>：</p>
 <p>派克玩的好骚，Clid住在了上路也就抓死了两次，剑姬最后直接单杀格温，把格温拉扯麻了。</p>
 <p>这派克视野分动不动就一百多吗，排眼刀确实是好变态。</p>
 <p>这剑姬一直不死啊，把把拉扯好几个</p>
 <p>好吧最后直接猝死了</p>
-<h1 id="LCK-2022夏季赛"><a href="#LCK-2022夏季赛" class="headerlink" title="LCK 2022夏季赛"></a>LCK 2022夏季赛</h1><h2 id="常规赛-T1-2-1-BRO"><a href="#常规赛-T1-2-1-BRO" class="headerlink" title="常规赛 T1 2-1 BRO"></a>常规赛 T1 2-1 BRO</h2><p><strong>时间</strong>：2022.7.23</p>
+<h2 id="常规赛-TES-2-0-V5"><a href="#常规赛-TES-2-0-V5" class="headerlink" title="常规赛 TES 2-0 V5"></a>常规赛 TES 2-0 V5</h2><p><strong>时间</strong>：2022.8.9</p>
+<p><strong>阵容</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>队伍\位置</th>
+<th>TOP</th>
+<th>JUG</th>
+<th>MID</th>
+<th>AD</th>
+<th>SUP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TES</td>
+<td>Wayward</td>
+<td>Tian</td>
+<td>Knight</td>
+<td>JackeyLove</td>
+<td>Mark</td>
+</tr>
+<tr>
+<td>V5</td>
+<td>Rich</td>
+<td>Karsa</td>
+<td>Dream</td>
+<td>Photic</td>
+<td>PPGod</td>
+</tr>
+</tbody></table>
+<p> <strong>打分环节</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>贴吧ID\选手</th>
+<th>V5-Rookie</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.26bec52d.0BcZOTeUvvoN6dbbJKrLSw&ie=utf-8&fr=pb">楚天枫悔</a></td>
+<td>下手太狠了义进哥</td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.d62b7178.QbIRcbS6Le_8SdV0RBO-Jw&ie=utf-8&fr=pb">简太君的粉丝</a></td>
+<td>爹</td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.28fc30a0.4lrwfcGO7cHY_644jxIGAg&ie=utf-8&fr=pb">幻心柠檬愺</a></td>
+<td>专打懦手<img src="https://sun80449.oss-cn-shanghai.aliyuncs.com/image-20220809220511387.png" alt="image-20220809220511387"></td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.9b0f6474.YLw-zcNuQs7dmEUneuF0tA&ie=utf-8&fr=pb">爱元素</a></td>
+<td>神中神 <img src="https://sun80449.oss-cn-shanghai.aliyuncs.com/image_emoticon3.png" alt="img"></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>ID\选手</th>
+<th>V5-Photic</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.9b0f6474.YLw-zcNuQs7dmEUneuF0tA&ie=utf-8&fr=pb">爱元素</a></td>
+<td>老公<img src="https://sun80449.oss-cn-shanghai.aliyuncs.com/image-20220809215411522.png"></td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.88f16c16.MFx9Id3JV53Ewj8qn4PADg&ie=utf-8&fr=pb">明天必做上岸人</a></td>
+<td>看好了尿尿 赛娜是这样玩的！</td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.1d12637d.A-QOU5z_BJgG5DU_fJ_8LQ&ie=utf-8&fr=pb">给我砸</a></td>
+<td>ad gap   <img src="https://sun80449.oss-cn-shanghai.aliyuncs.com/image-20220809215502985.png" alt="image-20220809215502985"></td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.cbe421a2.bETwRhzG1t0TfOcNZPaQ5g&ie=utf-8&fr=pb">攻击性是否太低</a></td>
+<td>狂！</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>ID\选手</th>
+<th>sTES-Wayward</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.a72d8ec4.Gx_E82CyZ-WR_ChwOD_MuQ&ie=utf-8&fr=pb">温婉柔雅</a></td>
+<td>全部上单ban完，v5不抢酒桶我就知道是在骗tes拿酒桶然后用剑魔康特，我刚想的是bsyy叛逆了，后来一想，你武器剑姬但凡会一个富贵都不敢拿这个剑魔，但是你一个不会，这把的酒桶也是臭不可闻</td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.d5b7bd6d.2lgIc-qm_U0bYB4oYdni8A&ie=utf-8&fr=pb">北伤</a></td>
+<td>这么想闪开表现自己去得到抗抗的赞赏吗？就今天这样还想透小橡皮？你以后还是好好混却恶心别人就好<img src="https://sun80449.oss-cn-shanghai.aliyuncs.com/image-20220809220004011.png" alt="image-20220809220004011"></td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.ac3aa78b.1gGFTz3pIcLJsyEShYWOGg&ie=utf-8&fr=pb">派茶</a></td>
+<td>迟来的神罚！建议今晚回去赶紧给大糖上个舰长降降温。</td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.e41f4759.yOVILnsYnV5XHkwbIdON4g&ie=utf-8&fr=pb">冰果茶</a></td>
+<td>fw，滔博有你注定走不远，你和前几个冠军上路差了10个letme</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>贴吧ID\选手</th>
+<th>TES-JackeyLove</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.24f1147e.SNiKxAh0gGc5Zi5yy-0yzw&ie=utf-8&fr=pb">童谣</a></td>
+<td>队友：《中路K头不C》《辅助不保AD》《上路差距》《打野不保下路》割割：【闪现向前√】 割割尽力了 可以开始骂队友了，顺便问一句 萧P你什么冠军？</td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.274da580.9Gwnko-Nyos2CyM9QRalBg&ie=utf-8&fr=pb">下路有个罐子偷3c</a></td>
+<td>你看着当年那个被你赶下去的替补一步一步终于走到今天，你肯定起了怜悯之心，不忍心击败他，所以打了假赛，对吧。</td>
+</tr>
+<tr>
+<td><a href="https://tieba.baidu.com/home/main?id=tb.1.d6cc51cf.0CzDTcrXf9rdDPtwl9laqQ&ie=utf-8&fr=pb">离合sama</a></td>
+<td>好死！！！</td>
+</tr>
+</tbody></table>
+<p><strong>B03第1局</strong></p>
+<p><strong>胜者</strong>：V5</p>
+<p><strong>PICK</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>队伍\位置</th>
+<th>TOP</th>
+<th>JUG</th>
+<th>MID</th>
+<th>AD</th>
+<th>SUP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>蓝色方TES</td>
+<td>猪妹</td>
+<td>破败王</td>
+<td>塞拉斯</td>
+<td>大嘴</td>
+<td>璐璐</td>
+</tr>
+<tr>
+<td>红色方V5</td>
+<td>奥恩</td>
+<td>猴子</td>
+<td>发条</td>
+<td>卢锡安</td>
+<td>娜美</td>
+</tr>
+</tbody></table>
+<p><strong>赛事简报</strong>：</p>
+<p>K&#x2F;D&#x2F;A（V5）：13&#x2F;1&#x2F;33</p>
+<table>
+<thead>
+<tr>
+<th>MVP：Photic-卢锡安</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>票数：3&#x2F;6</td>
+</tr>
+<tr>
+<td>K&#x2F;D&#x2F;A：7&#x2F;0&#x2F;2</td>
+</tr>
+<tr>
+<td>伤转：160.2%</td>
+</tr>
+<tr>
+<td>对位经济差：+4686</td>
+</tr>
+</tbody></table>
+<p><strong>点评</strong>：</p>
+<div class="note warning"><p><strong>“人终有一死,而有些人则需要一点小小的帮助。”</strong></p>
+<p>—圣枪游侠·卢锡安</p>
+</div>
+
+<p>BP时双方的上路，都没有先出纳尔，而是选择了猪妹和奥恩这种坦克英雄。</p>
+<p>卢锡安与娜美的下路对线是很成功的，TES的璐璐大嘴组合并没有能够扛得住。对线的转折点是前期上中野打先锋的时候，TES下路过于贪兵线，被XLB抓住机会配合下路直接双杀。</p>
+<p>卢锡安在拿到优势之后，选手Photic把优势紧紧握在手里，进攻节奏一直十分紧凑。</p>
+<p>Rich的奥恩在团战的配合中也发挥了巨大的作用</p>
+<p><strong>B03第2局</strong></p>
+<p><strong>胜者</strong>：V5</p>
+<p><strong>PICK</strong>：</p>
+<blockquote>
+<p>注：V5选边主动选择红色方</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>队伍\位置</th>
+<th>TOP</th>
+<th>JUG</th>
+<th>MID</th>
+<th>AD</th>
+<th>SUP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>蓝色方TES</td>
+<td>酒桶</td>
+<td>巨魔</td>
+<td>妖姬</td>
+<td>轮子妈</td>
+<td>猫</td>
+</tr>
+<tr>
+<td>红色方V5</td>
+<td>剑魔</td>
+<td>猴子</td>
+<td>塞拉斯</td>
+<td>塞纳</td>
+<td>萨勒芬妮</td>
+</tr>
+</tbody></table>
+<p>V5的BP准备是很充分的，剑魔在对线时能够对酒桶形成压制。</p>
+<p>面对轮子妈+猫这种下路组合利用塞纳+萨勒芬妮作为解答，是否有效还需要实战的验证</p>
+<p><strong>赛事简报</strong>：</p>
+<p>最高输出：JackeyLove-希维尔 3.7W</p>
+<p>MVP：PPGod-萨勒芬妮</p>
+<blockquote>
+<p>注：我不理解，我感觉不如上路和中路</p>
+</blockquote>
+<p><strong>点评</strong>：</p>
+<div class="note warning"><p><strong>“我们的权力与生俱来”</strong></p>
+<p>—解脱者·塞拉斯</p>
+</div>
+
+<p>Tian 100%一血，还是很离谱的，不愧是TES的节奏发动机</p>
+<p>失去了Karsa的V5好像运营的节奏在这把又握在了手里，而且是面对目前联赛第一的TES，让我不由得想起上把跟UP打得难解难分的V5，简直是天壤之别。</p>
+<p>中上的操作完全对位压制，剑魔的TP支援配合队友的三杀直接奠定了巨大的优势。</p>
+<p>精彩的比赛，V5的运营与操作都是几乎完美的，希望TES能给出足够的回应。</p>
+<p>不过轮子妈配合猫咪的后期能力，还是值得期待的。</p>
+<p>V5在17分钟约为3K的经济优势，辅助PPGod的操作失误让TES追回了一些劣势。</p>
+<p>团战很精彩，不过双方目前的短板，TES上单Wayward和V5打野XLB都有着不小的失误，双方纠缠了好久，小龙团战在各自上野复活之后依旧在进行，妖姬的POKE对V5有着巨大的威胁，但是Wayward的再次失误葬送了这波团战。</p>
+<p>中塔保卫战中，PPGod魅惑到三人，TES上野直接被融化，V5直接逼大龙，击杀Wayward并且拿下大龙。</p>
+<blockquote>
+<p>“V5首条大龙胜率，100%！”</p>
+<p>—管泽元</p>
+</blockquote>
+<p>酒桶在高地时再次被抓，Wayward已经0&#x2F;4了，V5想要趁势一波，最后摧毁一座门牙塔后V5众人再次蹲到Wayward，可怜酒桶已经0&#x2F;5了😂。</p>
+<p>拿下龙魂后，V5摧枯拉朽之势，2&#x2F;0拿下天王山之战，终结了TES的13连胜</p>
+<h1 id="LCK-2022夏季赛"><a href="#LCK-2022夏季赛" class="headerlink" title="LCK 2022夏季赛"></a>LCK 2022夏季赛</h1><h2 id="常规赛第二轮-T1-2-1-BRO"><a href="#常规赛第二轮-T1-2-1-BRO" class="headerlink" title="常规赛第二轮 T1 2-1 BRO"></a>常规赛第二轮 T1 2-1 BRO</h2><p><strong>时间</strong>：2022.7.23</p>
 <p><strong>阵容</strong>：</p>
 <table>
 <thead>
@@ -4115,6 +4390,68 @@ alert(&#39;cnblogs&#39;);
 <p>好像有点寄了，BRO这个队伍大比分1-10，感觉已经结束了！</p>
 <p>30分钟经济差已经8K了，有一说一确实是没什么希望，不过真的能折磨，动不动三十几分钟</p>
 <p>？这飞机也太抽象了，纯几把演员吧，我傻了</p>
+<h2 id="常规赛第二轮-LSB-2-0-T1"><a href="#常规赛第二轮-LSB-2-0-T1" class="headerlink" title="常规赛第二轮 LSB 2-0 T1"></a>常规赛第二轮 LSB 2-0 T1</h2><p>进行一手对大飞老师的幸灾乐祸🤣</p>
+<p><strong>时间</strong>：2022.8.10</p>
+<p><strong>阵容</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>队伍\位置</th>
+<th>TOP</th>
+<th>JUG</th>
+<th>MID</th>
+<th>AD</th>
+<th>SUP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LSB</td>
+<td>Dove</td>
+<td>Croco</td>
+<td>Clozer</td>
+<td>Prince</td>
+<td>Kael</td>
+</tr>
+<tr>
+<td>T1</td>
+<td>Zeus</td>
+<td>Oner</td>
+<td>Faker</td>
+<td>Gumayusi</td>
+<td>Keria</td>
+</tr>
+</tbody></table>
+<p><strong>B03第1局</strong></p>
+<p><strong>胜者</strong>：LSB</p>
+<p><strong>BP</strong>：</p>
+<p><img src="https://sun80449.oss-cn-shanghai.aliyuncs.com/image-20220811093043563.png" alt="image-20220811093043563"></p>
+<p><strong>赛事简报</strong>：</p>
+<p>MVP：Clozer-阿狸</p>
+<p><strong>点评</strong>：</p>
+<div class="note warning"><p><strong>“我们心有灵犀，不是吗？”</strong></p>
+<p>—九尾妖狐·阿狸</p>
+</div>
+
+<p>打野潘森时隔了549天再次登上LCK赛场，上次是去年春季赛DK.Canyon使用的。</p>
+<p>LCK前期确实是无聊，7分钟双方几乎没有碰撞，上路又是猪妹与酒桶两个坦克英雄。</p>
+<p>先锋团战，LSB四打五击杀Oner，同时轮子妈还爽吃一波兵线。</p>
+<p>11分钟双方才爆发了一先锋团战，LSB在击杀先锋的同时，团战二换三，Gumayusi的泽丽与Faker的沙皇出现失误，再加上下一波也去遭遇战上野被对位击杀，LSB的中野已经建立了足够的优势。</p>
+<p>Clozer狐狸在人群中左飘右闪，魅惑永霜弃用，直接掌控了这波团战，中野已经建立了巨大优势（20分钟对位领先3K，整体领先5K且T1没有击杀或摧毁任何远古生物与防御塔）</p>
+<p>随后上野被击杀，视野的压迫让T1几乎没有争夺大龙的可能，LSB拿下大龙后，这把比赛几乎已经呈现碾压之势，经济已经碾压7K，不过在上辅失误被杀后，Faker趁势摧毁了下路一塔，避免了“玲珑塔”的尴尬</p>
+<p>最后一波团战，蔚Q闪接配合泰坦大招与狐狸的TP，双锁头直接击杀了Gumayusi的泽丽T1团战溃败，直接被一波结束比赛。</p>
+<p><strong>B03第2局</strong></p>
+<p><strong>胜者</strong>：LSB</p>
+<p><strong>BP</strong>：</p>
+<p><img src="https://sun80449.oss-cn-shanghai.aliyuncs.com/image-20220811095342664.png" alt="image-20220811095342664"></p>
+<p>这局的BanPick环节，T1下路组合选用了金克斯+机器人只为了破解LSB的塔姆，个人认为是一个比较失败的BP</p>
+<p><strong>点评</strong>：</p>
+<div class="note warning"><p><strong>千万利器，莫过于你的信念</strong></p>
+<p>—残月之肃·厄斐琉斯</p>
+</div>
+
+<p>12分钟，双方经过互相博弈局势比较平衡，但是随后的团战中互相发生优势团战，其中LSB下路团战Clozer发挥极其出彩，随后的先锋团失利后，LSB又在中路二塔保卫战，打出一波零换五，T1在防御塔尚未被摧毁的情况下顶着防御塔被对面击溃，并且随后T1持续掉点，经济差直接扩大到5K经济。</p>
+<p>厄斐琉斯在20分钟已经达到11&#x2F;0&#x2F;3，对位领先7K经济</p>
+<p>23分钟一换五直接拿下了比赛，最终厄斐琉斯拿下14&#x2F;0&#x2F;3</p>
 ]]></content>
       <categories>
         <category>赛事</category>
@@ -4563,6 +4900,31 @@ alert(&#39;cnblogs&#39;);
       </categories>
       <tags>
         <tag>备份</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的世界生物笔记</title>
+    <url>/2022/08/12/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E7%94%9F%E7%89%A9%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
+<li><strong>整理第一版：</strong>2022年8月 游戏版本：1.18.2 JAVA</li>
+</ul>
+<blockquote>
+<p><strong>参考文献&#x2F;视频：</strong></p>
+<ul>
+<li><a href="https://minecraft.fandom.com/zh/wiki/%E7%94%9F%E7%89%A9">Minecraft Wiki 生物</a></li>
+<li><a href="https://www.bilibili.com/video/BV13W4y1h72S?spm_id_from=333.851.header_right.fav_list.click&vd_source=485f17a655a0e353223b96d4092d2788">【sandiction】三条末影龙两只凋灵和循声守卫全收容 - 极限生存实况 E18</a></li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>生物（Mobs）</strong>是指游戏世界中有生命的、可自主移动的一类<a href="https://minecraft.fandom.com/zh/wiki/%E5%AE%9E%E4%BD%93">实体</a>，术语“Mob”是“Mobile（可移动的）”的简写。</p>
+<p>该笔记将整理当前版本下所有的生物以及相关生成代码，主要是用于建立全生物收容所，并且将尽力收集隐藏生物，特殊彩蛋生物的相关知识，下面将以<a href="https://minecraft.fandom.com/zh">Minecraft Wiki</a>生物版块为大纲进行介绍</p>
+<h1 id="友好生物"><a href="#友好生物" class="headerlink" title="友好生物"></a>友好生物</h1><p>友好生物是不会主动攻击玩家的生物，这些生物不会因<a href="https://minecraft.fandom.com/zh/wiki/%E9%9A%BE%E5%BA%A6">难度</a>设置而被删除。</p>
+<h2 id="飞行生物"><a href="#飞行生物" class="headerlink" title="飞行生物"></a>飞行生物</h2><h3 id="蝙蝠"><a href="#蝙蝠" class="headerlink" title="蝙蝠"></a>蝙蝠</h3><h2 id="陆地生物"><a href="#陆地生物" class="headerlink" title="陆地生物"></a>陆地生物</h2><h2 id="水生生物"><a href="#水生生物" class="headerlink" title="水生生物"></a>水生生物</h2><h3 id="鸡"><a href="#鸡" class="headerlink" title="鸡"></a>鸡</h3><h3 id="鳕鱼"><a href="#鳕鱼" class="headerlink" title="鳕鱼"></a>鳕鱼</h3><h3 id="牛"><a href="#牛" class="headerlink" title="牛"></a>牛</h3><h3 id="驴"><a href="#驴" class="headerlink" title="驴"></a>驴</h3><h3 id="发光鱿鱼"><a href="#发光鱿鱼" class="headerlink" title="发光鱿鱼"></a>发光鱿鱼</h3><h3 id="马"><a href="#马" class="headerlink" title="马"></a>马</h3><h3 id="哞菇"><a href="#哞菇" class="headerlink" title="哞菇"></a>哞菇</h3><h3 id="骡"><a href="#骡" class="headerlink" title="骡"></a>骡</h3><h3 id="鹦鹉"><a href="#鹦鹉" class="headerlink" title="鹦鹉"></a>鹦鹉</h3><h3 id="猪"><a href="#猪" class="headerlink" title="猪"></a>猪</h3><h3 id="兔子"><a href="#兔子" class="headerlink" title="兔子"></a>兔子</h3><h3 id="鲑鱼"><a href="#鲑鱼" class="headerlink" title="鲑鱼"></a>鲑鱼</h3><h3 id="绵羊"><a href="#绵羊" class="headerlink" title="绵羊"></a>绵羊</h3><h3 id="骷髅马"><a href="#骷髅马" class="headerlink" title="骷髅马"></a>骷髅马</h3><h3 id="鱿鱼"><a href="#鱿鱼" class="headerlink" title="鱿鱼"></a>鱿鱼</h3><h3 id="炽足兽"><a href="#炽足兽" class="headerlink" title="炽足兽"></a>炽足兽</h3><h3 id="热带鱼"><a href="#热带鱼" class="headerlink" title="热带鱼"></a>热带鱼</h3><h3 id="海龟"><a href="#海龟" class="headerlink" title="海龟"></a>海龟</h3><h3 id="村民"><a href="#村民" class="headerlink" title="村民"></a>村民</h3><h3 id="流浪商人"><a href="#流浪商人" class="headerlink" title="流浪商人"></a>流浪商人</h3><h3 id="河豚"><a href="#河豚" class="headerlink" title="河豚"></a>河豚</h3><h3 id="山羊"><a href="#山羊" class="headerlink" title="山羊"></a>山羊</h3><h3 id="美西螈"><a href="#美西螈" class="headerlink" title="美西螈"></a>美西螈</h3><h3 id="猫"><a href="#猫" class="headerlink" title="猫"></a>猫</h3><h3 id="豹猫"><a href="#豹猫" class="headerlink" title="豹猫"></a>豹猫</h3><h3 id="雪傀儡蜜蜂海豚狐狸铁傀儡羊驼狼熊猫北极熊"><a href="#雪傀儡蜜蜂海豚狐狸铁傀儡羊驼狼熊猫北极熊" class="headerlink" title="雪傀儡蜜蜂海豚狐狸铁傀儡羊驼狼熊猫北极熊"></a>雪傀儡蜜蜂海豚狐狸铁傀儡羊驼狼熊猫北极熊</h3>]]></content>
+      <categories>
+        <category>游戏-我的世界</category>
+      </categories>
+      <tags>
+        <tag>我的世界</tag>
       </tags>
   </entry>
 </search>
